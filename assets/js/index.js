@@ -67,19 +67,19 @@ const btn = document.getElementById("botonCambiar")
 // Consigna: ejercico 6 Clases
 // Crea una clase llamada Persona con un constructor que tome dos parámetros: nombre y edad. Añade un método llamado saludar que imprima en la consola "Hola, me llamo [nombre] y tengo [edad] años". Luego, crea una instancia de Persona y llama al método saludar.
 
-class Persona {
-    constructor(nombre, edad) {
-        this.nombre = nombre;
-        this.edad = edad;
-    }
-    saludar(){
-        console.log(`Hola, me llamo ${this.nombre} y tengo ${this.edad} años`)
-    }
-}
+// class Persona {
+//     constructor(nombre, edad) {
+//         this.nombre = nombre;
+//         this.edad = edad;
+//     }
+//     saludar(){
+//         console.log(`Hola, me llamo ${this.nombre} y tengo ${this.edad} años`)
+//     }
+// }
 
-const personaUno = new Persona("Sebastian", 30)
-personaUno.saludar()
-const personaDos = new Persona("Helmo", 35)
-personaDos.saludar()
-const personaTres = new Persona("Erick", 33)
-personaTres.saludar()
+// const personaUno = new Persona("Sebastian", 30)
+// personaUno.saludar()
+// const personaDos = new Persona("Helmo", 35)
+// personaDos.saludar()
+// const personaTres = new Persona("Erick", 33)
+// personaTres.saludar()
