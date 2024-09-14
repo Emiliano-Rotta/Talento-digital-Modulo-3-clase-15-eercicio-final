@@ -52,14 +52,34 @@ const btn = document.getElementById("botonCambiar")
 // Consigna:
 // En un archivo HTML, crea un div con el id "caja". En tu archivo JavaScript, escribe una función que cambie el ancho de la caja a 200px y su color de fondo a rojo cuando se llame a la función.
 
-const caja = document.getElementById("caja")
+// const caja = document.getElementById("caja")
 
-const cambiarEstilo = () => {
-    caja.style.width = "200px"
-    caja.style.backgroundColor = "red"
+// const cambiarEstilo = () => {
+//     caja.style.width = "200px"
+//     caja.style.backgroundColor = "red"
+// }
+
+// btn.addEventListener("click", function(){
+//     document.body.style.backgroundColor = "blue"
+//     cambiarEstilo()
+// })
+
+// Consigna: ejercico 6 Clases
+// Crea una clase llamada Persona con un constructor que tome dos parámetros: nombre y edad. Añade un método llamado saludar que imprima en la consola "Hola, me llamo [nombre] y tengo [edad] años". Luego, crea una instancia de Persona y llama al método saludar.
+
+class Persona {
+    constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+    saludar(){
+        console.log(`Hola, me llamo ${this.nombre} y tengo ${this.edad} años`)
+    }
 }
 
-btn.addEventListener("click", function(){
-    document.body.style.backgroundColor = "blue"
-    cambiarEstilo()
-})
+const personaUno = new Persona("Sebastian", 30)
+personaUno.saludar()
+const personaDos = new Persona("Helmo", 35)
+personaDos.saludar()
+const personaTres = new Persona("Erick", 33)
+personaTres.saludar()
